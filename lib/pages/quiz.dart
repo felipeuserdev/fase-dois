@@ -2,7 +2,6 @@ import 'dart:developer';
 import 'package:fase_dois/components/background_custom.dart';
 import 'package:fase_dois/components/button_custom.dart';
 import 'package:fase_dois/components/button_edit.dart';
-import 'package:fase_dois/components/button_home.dart';
 import 'package:fase_dois/models/arguments.dart';
 import 'package:fase_dois/variables/variables.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +24,7 @@ Map<int, bool> idx = {
 
 class _Quiz extends State<Quiz> {
   //nção sei o que to fazendo aqui ainda
-
+  prox() {}
   //ignorar
 
   @override
@@ -191,36 +190,11 @@ class _Quiz extends State<Quiz> {
                     ],
                   ),
                 ),
-
-                // ButtonCustom(
-                //   title: args.listaQuiz[indexPergunta]['respostas'][0],
-                //   color: colorWhite,
-                //   check: false,
-                //   indexButton: 0,
-                // ),
-                // ButtonCustom(
-                //   title: args.listaQuiz[indexPergunta]['respostas'][1],
-                //   color: colorWhite,
-                //   check: false,
-                //   indexButton: 1,
-                // ),
-                // ButtonCustom(
-                //   title: args.listaQuiz[indexPergunta]['respostas'][2],
-                //   color: colorWhite,
-                //   check: false,
-                //   indexButton: 2,
-                // ),
-                // ButtonCustom(
-                //   title: args.listaQuiz[indexPergunta]['respostas'][3],
-                //   color: colorWhite,
-                //   check: false,
-                //   indexButton: 3,
-                // ),
                 ListButton(
-                  resp1: args.listaQuiz[indexPergunta]['respostas'][0],
-                  resp2: args.listaQuiz[indexPergunta]['respostas'][1],
-                  resp3: args.listaQuiz[indexPergunta]['respostas'][2],
-                  resp4: args.listaQuiz[indexPergunta]['respostas'][3],
+                  title1: args.listaQuiz[indexPergunta]['respostas'][0],
+                  title2: args.listaQuiz[indexPergunta]['respostas'][1],
+                  title3: args.listaQuiz[indexPergunta]['respostas'][2],
+                  title4: args.listaQuiz[indexPergunta]['respostas'][3],
                 )
               ],
             ),
@@ -236,16 +210,18 @@ class _Quiz extends State<Quiz> {
 
 //ignore: must_be_immutable
 class ListButton extends StatefulWidget {
-  String resp1;
-  String resp2;
-  String resp3;
-  String resp4;
-  ListButton(
-      {super.key,
-      required this.resp1,
-      required this.resp2,
-      required this.resp3,
-      required this.resp4});
+  String title1;
+  String title2;
+  String title3;
+  String title4;
+
+  ListButton({
+    super.key,
+    required this.title1,
+    required this.title2,
+    required this.title3,
+    required this.title4,
+  });
 
   @override
   State<ListButton> createState() => _ListButtonState();
@@ -260,6 +236,8 @@ class _ListButtonState extends State<ListButton> {
       if (idx[n] == false) {
         idx.updateAll((key, value) => false);
         idx.update(n, (value) => true);
+      } else {
+        idx[n] = false;
       }
       log(idx.toString());
     });
@@ -269,7 +247,8 @@ class _ListButtonState extends State<ListButton> {
 
   @override
   Widget build(BuildContext context) {
-    log('buildou');
+    log('buildou o listButton');
+    final listArgs = ModalRoute.of(context)!.settings.arguments as Arguments;
     return Column(
       children: [
         GestureDetector(
@@ -277,7 +256,7 @@ class _ListButtonState extends State<ListButton> {
             confirm(0);
           }),
           child: ButtonCustom(
-            title: widget.resp1,
+            title: widget.title1,
             color: colorWhite,
             check: idx[0]!,
             isPress: !idx[0]!,
@@ -289,7 +268,7 @@ class _ListButtonState extends State<ListButton> {
             confirm(1);
           }),
           child: ButtonCustom(
-            title: widget.resp2,
+            title: widget.title2,
             color: colorWhite,
             check: idx[1]!,
             isPress: !idx[1]!,
@@ -301,7 +280,7 @@ class _ListButtonState extends State<ListButton> {
             confirm(2);
           }),
           child: ButtonCustom(
-            title: widget.resp3,
+            title: widget.title3,
             color: colorWhite,
             check: idx[2]!,
             isPress: !idx[2]!,
@@ -313,7 +292,7 @@ class _ListButtonState extends State<ListButton> {
             confirm(3);
           }),
           child: ButtonCustom(
-            title: widget.resp4,
+            title: widget.title4,
             color: colorWhite,
             check: idx[3]!,
             isPress: !idx[3]!,
