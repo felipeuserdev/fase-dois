@@ -1,7 +1,8 @@
-import 'package:fase_dois/components/background_custom.dart';
-import 'package:fase_dois/components/card_custom.dart';
-import 'package:fase_dois/variables/variables.dart';
 import 'package:flutter/material.dart';
+
+import '../components/background_custom.dart';
+import '../components/card_custom.dart';
+import '../theme/variables.dart';
 
 class ProgreesingPage extends StatefulWidget {
   const ProgreesingPage({super.key});

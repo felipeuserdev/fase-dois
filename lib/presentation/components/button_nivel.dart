@@ -1,7 +1,8 @@
 import 'dart:developer';
-import 'package:fase_dois/components/dialogbox.dart';
 import 'package:flutter/material.dart';
-import '../variables/variables.dart';
+
+import '../theme/variables.dart';
+import 'dialogbox.dart';
 
 //Botão de Niveis
 

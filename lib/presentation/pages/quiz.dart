@@ -1,10 +1,11 @@
 import 'dart:developer';
-import 'package:fase_dois/components/background_custom.dart';
-import 'package:fase_dois/components/button_custom.dart';
-import 'package:fase_dois/components/button_edit.dart';
 import 'package:fase_dois/models/arguments.dart';
-import 'package:fase_dois/variables/variables.dart';
 import 'package:flutter/material.dart';
+
+import '../components/background_custom.dart';
+import '../components/button_custom.dart';
+import '../components/button_edit.dart';
+import '../theme/variables.dart';
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
@@ -25,6 +26,7 @@ Map<int, bool> idx = {
 class _Quiz extends State<Quiz> {
   //nção sei o que to fazendo aqui ainda
   prox() {}
+
   //ignorar
 
   @override

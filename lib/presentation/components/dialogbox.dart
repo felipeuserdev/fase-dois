@@ -1,11 +1,12 @@
 import 'dart:developer';
 
-import 'package:fase_dois/components/button_nivel.dart';
 import 'package:fase_dois/models/api.dart';
 import 'package:fase_dois/models/arguments.dart';
-import 'package:fase_dois/pages/quiz.dart';
-import 'package:fase_dois/variables/variables.dart';
 import 'package:flutter/material.dart';
+
+import '../pages/quiz.dart';
+import '../theme/variables.dart';
+import 'button_nivel.dart';
 
 class DialogBox extends StatelessWidget {
   const DialogBox({

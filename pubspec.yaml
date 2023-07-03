@@ -20,7 +20,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.6 <3.0.0'
+  sdk: '>=3.0.5 <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -31,7 +31,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  http: ^0.13.5
+  http: ^1.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -62,10 +62,9 @@ flutter:
 
 
   assets:  
-    - lib/assets/images/fase_dois.png
-    - lib/assets/images/background_fase_dois.png
-    - lib/assets/images/line_progressing.png
-    - lib/assets/images/glass.png
+    - assets/images/
+    - assets/json/
+    - assets/fonts/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -82,10 +81,10 @@ flutter:
   fonts:
     - family: Lilita
       fonts:
-       - asset: lib/assets/fonts/LilitaOne-Regular.ttf
+       - asset: assets/fonts/LilitaOne-Regular.ttf
     - family: Staat
       fonts:
-       - asset: lib/assets/fonts/Staatliches-Regular.ttf
+       - asset: assets/fonts/Staatliches-Regular.ttf
        
   #   - family: Trajan Pro
   #     fonts:

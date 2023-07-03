@@ -1,10 +1,10 @@
-import 'package:fase_dois/variables/variables.dart';
 import 'package:flutter/material.dart';
-import 'package:fase_dois/components/background_custom.dart';
-import 'package:fase_dois/components/animated_logo.dart';
-import 'package:fase_dois/components/button_home.dart';
 
+import '../components/animated_logo.dart';
+import '../components/background_custom.dart';
 import '../components/button_custom.dart';
+import '../components/button_home.dart';
+import '../theme/variables.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
