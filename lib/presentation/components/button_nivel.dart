@@ -1,20 +1,21 @@
 import 'dart:developer';
-import 'package:fase_dois/components/dialogbox.dart';
 import 'package:flutter/material.dart';
-import '../variables/variables.dart';
+
+import '../theme/variables.dart';
+import 'dialogbox.dart';
 
 //Botão de Niveis
 
 //ignore: must_be_immutable
 class ButtonNivel extends StatefulWidget {
-  MainAxisAlignment leftorRight;
+  MainAxisAlignment aligment;
   String title;
   bool selected = false;
   int numeroQuiz;
   int indexNivel;
   ButtonNivel(
       {super.key,
-      this.leftorRight = MainAxisAlignment.end,
+      this.aligment = MainAxisAlignment.end,
       this.title = '',
       this.numeroQuiz = 0,
       this.indexNivel = 0});
@@ -45,7 +46,7 @@ class _ButtonNivelState extends State<ButtonNivel> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: widget.leftorRight,
+      mainAxisAlignment: widget.aligment,
       children: [
         AnimatedScale(
           duration: const Duration(milliseconds: 100),

@@ -1,11 +1,16 @@
-import 'package:fase_dois/components/button_nivel.dart';
+import 'package:fase_dois/domain/interactor/quiz_interactor.dart';
+import 'package:fase_dois/domain/interactor/quiz_interactor_impl.dart';
 import 'package:fase_dois/models/api.dart';
-import 'package:fase_dois/variables/variables.dart';
 import 'package:flutter/material.dart';
+
+import '../../data/repository/quiz_repository_imlp.dart';
+import '../theme/variables.dart';
+import 'button_nivel.dart';
 
 //ignore: must_be_immutable
 class CardCustom extends StatefulWidget {
   int? nivel;
+
   CardCustom({super.key, this.nivel});
 
   @override
@@ -18,7 +23,8 @@ class _CardCustomState extends State<CardCustom> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: getInfo(),
+      future:
+          QuizInteractorImpl(repository: QuizRepositoryImpl()).getQuizInfo(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           return SizedBox(
@@ -27,8 +33,11 @@ class _CardCustomState extends State<CardCustom> {
                 : MediaQuery.of(context).size.width - 16,
             child: ListView.builder(
               shrinkWrap: true,
-              itemCount: snapshot.data!.length,
-              itemBuilder: (context, index) {
+              itemCount: snapshot.data!.categories.length,
+              itemBuilder: (context, categoriesIndex) {
+
+                var items = snapshot.data!.categories[categoriesIndex].levels;
+
                 return Container(
                   decoration: BoxDecoration(
                     color: colorWhite,
@@ -82,47 +91,17 @@ class _CardCustomState extends State<CardCustom> {
                             padding: const EdgeInsets.only(left: 40, right: 40),
                             //retirar essa Padding
                             child: Column(
-                              children: [
-                                ButtonNivel(
-                                  leftorRight: MainAxisAlignment.start,
-                                  title: snapshot.data![index]['nivel'][0]
-                                      ['icon'],
-                                  numeroQuiz: 0,
-                                  indexNivel: index,
+                              children: List.generate(
+                                items.length,
+                                (index) => ButtonNivel(
+                                  aligment: index % 2 == 0
+                                      ? MainAxisAlignment.end
+                                      : MainAxisAlignment.start,
+                                  title: items[index].icon,
+                                  numeroQuiz: index,
+                                  indexNivel: categoriesIndex,
                                 ),
-                                ButtonNivel(
-                                  title: snapshot.data![index]['nivel'][1]
-                                      ['icon'],
-                                  numeroQuiz: 1,
-                                  indexNivel: index,
-                                ),
-                                ButtonNivel(
-                                  leftorRight: MainAxisAlignment.start,
-                                  title: snapshot.data![index]['nivel'][2]
-                                      ['icon'],
-                                  numeroQuiz: 2,
-                                  indexNivel: index,
-                                ),
-                                ButtonNivel(
-                                  title: snapshot.data![index]['nivel'][3]
-                                      ['icon'],
-                                  numeroQuiz: 3,
-                                  indexNivel: index,
-                                ),
-                                ButtonNivel(
-                                  leftorRight: MainAxisAlignment.start,
-                                  title: snapshot.data![index]['nivel'][4]
-                                      ['icon'],
-                                  numeroQuiz: 4,
-                                  indexNivel: index,
-                                ),
-                                ButtonNivel(
-                                  title: snapshot.data![index]['nivel'][5]
-                                      ['icon'],
-                                  numeroQuiz: 5,
-                                  indexNivel: index,
-                                ),
-                              ],
+                              ),
                             ),
                           )
                         ],
@@ -134,7 +113,7 @@ class _CardCustomState extends State<CardCustom> {
             ),
           );
         } else if (snapshot.hasError) {
-          return const Text('data');
+          throw Exception(snapshot.error.toString());
         }
         return Center(
           child: SizedBox(

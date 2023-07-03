@@ -1,9 +1,8 @@
-import 'package:fase_dois/pages/quiz.dart';
-import 'package:fase_dois/variables/style.dart';
+import 'package:fase_dois/presentation/pages/home_page.dart';
+import 'package:fase_dois/presentation/pages/progressing_page.dart';
+import 'package:fase_dois/presentation/pages/quiz.dart';
+import 'package:fase_dois/presentation/theme/style.dart';
 import 'package:flutter/material.dart';
-import 'package:fase_dois/pages/home_page.dart';
-
-import 'pages/progressing_page.dart';
 
 void main() {
   runApp(const Routes());

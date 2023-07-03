@@ -1,0 +1,362 @@
+{
+  "categories": [
+    {
+      "categoryName": "Categoria 1",
+      "level": [
+        {
+          "icon": "☀",
+          "questions": [
+            {
+              "tip": "Art.10",
+              "order": 1,
+              "question": "Ricardo e Roberto, no dia 10/08/2020, às 19 horas, foram flagrados pela Polícia Militar quando saíam da agência bancária do Banco Peixe, localizada no centro de Barnabeu, Estado de Campo Novo (CN), de posse de equipamentos tipo serrote, chave de fenda e alicate. A Polícia Militar fora acionada por vigilantes da agência que, remotamente, por meio de câmeras de segurança, acompanharam a ação de Ricardo e Roberto, que tentaram utilizar o serrote para romper a placa de aço e, assim, ter acesso ao conteúdo dos caixas eletrônicos da agência. Após 30 minutos de tentativas, Ricardo e Roberto deixaram a agência, momento em que, já ao lado de fora, foram abordados pelos policiais militares. Com base em tais fatos, e constando como elemento informativo produzido no inquérito apenas a oitiva dos acusados e dos policiais, Ricardo e Roberto foram denunciados como incursos nas penas do Art. 155, § 4º, incisos I e IV, e do Art. 14, inciso II, ambos do Código Penal. A denúncia foi distribuída ao Juízo competente da 5ª Vara Criminal da Comarca de Barnabeu-CN. A prisão em flagrante de Ricardo foi convertida em preventiva, para a garantia da ordem pública, salientando-se que Ricardo possuía condenação anterior pela prática de furto de caixa eletrônico, cuja pena foi cumprida e extinta em 10/04/2019. Já Roberto obteve liberdade provisória na audiência de custódia, realizada no dia seguinte à prisão em flagrante. Ricardo obteve ordem de habeas corpus, que o pôs em liberdade após 30 (trinta) dias preso, condicionada a cautelares diversas da prisão. A instrução processual repetiu as provas orais realizadas na fase inquisitiva, tendo sido ouvidos os Policiais Militares e, em seguida, realizado o interrogatório dos réus, que confessaram a tentativa de arrombamento do caixa eletrônico. Afirmaram que, com o serrote e a chave de fenda, tentaram romper a ferragem do caixa ou abrir os parafusos, mas, após cerca de 30 minutos dentro da agência, apenas conseguiram realizar arranhões na proteção de aço existente, razão pela qual paralisaram a ação e saíram da agência, quando então, do lado de fora, foram abordados por Policiais Militares. Finalizada a instrução, o Ministério Público não requereu a produção de outras provas. Em diligência requerida pela defesa, foi juntado aos autos um ofício do Banco Peixe, que informou ao Juízo que a estrutura do caixa eletrônico é de aço, imune à ação mecânica por força humana, e que os acusados não lograram danificar a estrutura do caixa eletrônico. Os autos foram enviados ao Ministério Público para manifestação, o qual postulou pela condenação dos acusados, nos termos da denúncia. O(A) advogado(a) constituído(a) foi intimado(a) no dia 11/04/2023 (terça-feira). ",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Deu certo parceiro!!!!!!!!!!!!!!!!!!!!!!",
+              "correct_answer": 2,
+              "answers": [
+                "será se vai?",
+                "como ocorre a mudança de estado?",
+                "ódio",
+                "Teste de um texto grande caso venha precisar talvez."
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "☁",
+          "questions": [
+            {
+              "tip": "Art.10",
+              "order": 1,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "♜",
+          "questions": [
+            {
+              "tip": "Art.10",
+              "order": 1,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "♞",
+          "questions": [
+            {
+              "tip": "Art.10",
+              "order": 1,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "♣",
+          "questions": [
+            {
+              "tip": "Art.10",
+              "order": 1,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "✈",
+          "questions": [
+            {
+              "tip": "Art.10",
+              "order": 1,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Categoria 2",
+      "level": [
+        {
+          "icon": "AAAAA",
+          "questions": [
+            {
+              "tip": "Art.10 do CPP",
+              "order": 1,
+              "question": "Faz o L agora e vem...",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "II",
+          "questions": [
+            {
+              "tip": "Art.10",
+              "order": 1,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "III",
+          "questions": [
+            {
+              "tip": "Art.10",
+              "order": 1,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "IV",
+          "questions": [
+            {
+              "tip": "Art.10",
+              "order": 1,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "V",
+          "questions": [
+            {
+              "tip": "Art.10",
+              "order": 1,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "VI",
+          "questions": [
+            {
+              "tip": "Art.10",
+              "order": 1,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            },
+            {
+              "tip": "Art.10",
+              "order": 2,
+              "question": "Fulano de tal... fez tal coisa... Qual é a peça?",
+              "correct_answer": 2,
+              "answers": [
+                "memoriais",
+                "apelação",
+                "Agravo em Execução",
+                "Mandado de Segurança"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

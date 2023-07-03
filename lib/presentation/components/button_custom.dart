@@ -1,6 +1,7 @@
 import 'dart:developer';
-import 'package:fase_dois/variables/variables.dart';
 import 'package:flutter/material.dart';
+
+import '../theme/variables.dart';
 
 //ignore: must_be_immutable
 class ButtonCustom extends StatefulWidget {

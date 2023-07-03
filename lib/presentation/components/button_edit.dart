@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:fase_dois/variables/variables.dart';
+
+import '../theme/variables.dart';
 
 //ignore: must_be_immutable
-class ButtonHome extends StatefulWidget {
+class ButtonEdit extends StatefulWidget {
+  double size;
   String title;
-  ButtonHome({Key? key, this.title = ''}) : super(key: key);
+  bool check;
+  ButtonEdit({Key? key, this.title = '', this.size = 32, this.check = false})
+      : super(key: key);
 
   @override
-  State<ButtonHome> createState() => _ButtonHomeState();
+  State<ButtonEdit> createState() => _ButtonEditState();
 }
 
-class _ButtonHomeState extends State<ButtonHome> {
+class _ButtonEditState extends State<ButtonEdit> {
   @override
   Widget build(BuildContext context) {
     return AnimatedScale(
@@ -25,15 +29,14 @@ class _ButtonHomeState extends State<ButtonHome> {
         onTap: () {
           setState(() {
             isTap = !isTap;
-            Navigator.pushNamed(context, '/PROG');
           });
         },
         child: Stack(children: [
           Padding(
             padding: const EdgeInsets.only(top: 10),
             child: Container(
-              height: 78,
-              width: 300,
+              height: widget.size,
+              width: MediaQuery.of(context).size.width - 56,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15), color: colorBlack),
             ),
@@ -43,9 +46,11 @@ class _ButtonHomeState extends State<ButtonHome> {
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 100),
               decoration: BoxDecoration(
-                  color: colorGreen, borderRadius: BorderRadius.circular(15)),
-              height: 78,
-              width: 300,
+                  //cor do botão
+                  color: widget.check ? colorGreen : colorLight,
+                  borderRadius: BorderRadius.circular(15)),
+              height: widget.size,
+              width: MediaQuery.of(context).size.width - 56,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
