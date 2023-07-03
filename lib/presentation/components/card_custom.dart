@@ -34,7 +34,10 @@ class _CardCustomState extends State<CardCustom> {
             child: ListView.builder(
               shrinkWrap: true,
               itemCount: snapshot.data!.categories.length,
-              itemBuilder: (context, levelsIndex) {
+              itemBuilder: (context, categoriesIndex) {
+
+                var items = snapshot.data!.categories[categoriesIndex].levels;
+
                 return Container(
                   decoration: BoxDecoration(
                     color: colorWhite,
@@ -88,41 +91,17 @@ class _CardCustomState extends State<CardCustom> {
                             padding: const EdgeInsets.only(left: 40, right: 40),
                             //retirar essa Padding
                             child: Column(
-                              children: [
-                                ButtonNivel(
-                                  leftorRight: MainAxisAlignment.start,
-                                  title: snapshot.data!.categories[levelsIndex].levels[0].icon,
-                                  numeroQuiz: 0,
-                                  indexNivel: levelsIndex,
+                              children: List.generate(
+                                items.length,
+                                (index) => ButtonNivel(
+                                  aligment: index % 2 == 0
+                                      ? MainAxisAlignment.end
+                                      : MainAxisAlignment.start,
+                                  title: items[index].icon,
+                                  numeroQuiz: index,
+                                  indexNivel: categoriesIndex,
                                 ),
-                                ButtonNivel(
-                                  title: snapshot.data!.categories[levelsIndex].levels[1].icon,
-                                  numeroQuiz: 1,
-                                  indexNivel: levelsIndex,
-                                ),
-                                ButtonNivel(
-                                  leftorRight: MainAxisAlignment.start,
-                                  title: snapshot.data!.categories[levelsIndex].levels[2].icon,
-                                  numeroQuiz: 2,
-                                  indexNivel: levelsIndex,
-                                ),
-                                ButtonNivel(
-                                  title: snapshot.data!.categories[levelsIndex].levels[3].icon,
-                                  numeroQuiz: 3,
-                                  indexNivel: levelsIndex,
-                                ),
-                                ButtonNivel(
-                                  leftorRight: MainAxisAlignment.start,
-                                  title: snapshot.data!.categories[levelsIndex].levels[4].icon,
-                                  numeroQuiz: 4,
-                                  indexNivel: levelsIndex,
-                                ),
-                                ButtonNivel(
-                                  title: snapshot.data!.categories[levelsIndex].levels[5].icon,
-                                  numeroQuiz: 5,
-                                  indexNivel: levelsIndex,
-                                ),
-                              ],
+                              ),
                             ),
                           )
                         ],
